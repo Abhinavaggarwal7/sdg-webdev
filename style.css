@@ -1,0 +1,199 @@
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+header{
+    height: 60px;
+    width: 100%;
+    background:black;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.navlist{
+    display: none;
+}
+.logotext{
+    margin-left: 70px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.pic{
+    position:absolute;
+    height: auto;
+    left: 0px;
+    width: 100px;
+}
+.content{
+    width: 100%;
+    height: 550px;
+    background: url(image/book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 0;
+}
+.contentsection{
+    color: rgb(16, 12, 6);
+}
+.content h2{
+    font-size: 60px;
+    color: rgb(238, 188, 61);
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.find{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    display: inline;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1rem;
+    background: rgb(169, 127, 159);
+    border:2px solid rgb(9, 14, 9);
+}
+.searchbox button {
+    text-decoration: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    background: rgb(144, 136, 190);
+    cursor:pointer;
+    border:2px solid rgb(9, 14, 9); 
+}
+
+/*BOOKS SECTION*/
+.books{
+    padding: 50px 0;
+}
+.books h1{
+   text-align: center;
+   margin-bottom: 40px;
+   font-size: 50px;
+   background-color: rgb(110, 8, 42);
+}
+.booksection{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.bookcard{
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black
+}
+.bookcard img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.bookcard h2{
+    font-size: 22px;
+    padding: 20px;
+}
+.bookcard a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0f030c;
+    color: #35a053;
+    font-size: 18px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.books h3{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+}
+footer{
+    background: #191818;
+    color: #747073;
+    text-align: center;
+    width: 100%;
+}
+.menu-icon{
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+/*media queries*/
+
+@media only screen and (min-width:768px) {
+    .menu-icon{
+        display: none;
+    }
+    .navlist{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px) {
+   .content h2{
+    font-size: 28px;
+   }
+   .content P{
+    font-size: 20px;
+   }
+}
+
+@media only screen and (max-width:768px) {
+    .logotext{
+        font-size: 22px ;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pic{
+        position: absolute;
+        width: 80px;
+        
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .searchbox{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
