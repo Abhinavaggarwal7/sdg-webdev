@@ -14,7 +14,7 @@ body{
 header{
     height: 60px;
     width: 100%;
-    background:black;
+    background:rgb(14, 12, 12);
     color:white;
     display: flex;
     align-items: center;
@@ -28,6 +28,14 @@ header{
 }
 .navlist{
     display: none;
+}
+.navlist a{
+    text-decoration: none;
+    color: rgb(169, 165, 165);
+    padding: 5px 3px;
+}
+.navlist a:hover{
+    background-color: #5a595a54;
 }
 .logotext{
     margin-left: 70px;
@@ -64,7 +72,7 @@ nav ul li{
 }
 .content h2{
     font-size: 60px;
-    color: rgb(238, 188, 61);
+    color: rgb(225, 179, 62);
     margin-bottom: 10px;
 }
 .content p{
@@ -81,15 +89,22 @@ nav ul li{
     background: rgb(169, 127, 159);
     border:2px solid rgb(9, 14, 9);
 }
-.searchbox button {
-    text-decoration: none;
+.searchbox button{
     padding: 10px 20px;
     outline: none;
     border-radius: 0px 5px 5px 0px;
     font-size: 1rem;
-    background: rgb(144, 136, 190);
+    background: rgb(133, 121, 202);
     cursor:pointer;
-    border:2px solid rgb(9, 14, 9); 
+    border:2px solid rgb(9, 9, 9); 
+}
+.buttontext a{
+    text-decoration: none;
+    color: #0f030c;
+}
+.buttontext :hover {
+    font-size: 20px;
+    color: #9f337f;
 }
 
 /*BOOKS SECTION*/
@@ -115,7 +130,7 @@ nav ul li{
     border: 1px solid black;
     overflow: hidden;
     box-shadow: 0 4px 8px black
-}
+} 
 .bookcard img{
     width: 100%;
     height: 400px;
@@ -139,6 +154,14 @@ nav ul li{
     text-align: center;
     background-color: black;
     color: antiquewhite;
+}
+.bookcard:hover{
+    border-color: hsl(169, 64%, 48%);
+    border-width: 3px;
+}
+.bookcard a:hover{
+    color: hsl(169, 64%, 48%);
+
 }
 footer{
     background: #191818;
@@ -188,12 +211,81 @@ footer{
         
     }
 }
-
 @media only screen and (max-width:768px) {
-    .searchbox{
-        font-size: 10px;
-        width: 100%;
-        padding: 10px;
-    }
+     .menu-icon button{
+        margin-right:40px;
+        margin-top: 10px;
+        cursor: pointer;
+     }
+     .menu-icon a{
+        font-size: 17px;
+        text-align: center;
+        border-radius: 20px;
+        margin-left: 100px;
+        display: block;
+        color: #e6dee4;
+        background-color: #243729;
+        text-decoration: none;
+        padding: 2px 2px;
+        margin-right: 2px;
+     }
+     .menu-icon{
+        display: inline-block;
+     }
+     .menu-icon .dropdown{
+        display: none;
+     }
+     .menu-icon:hover .dropdown{
+        display: block;
+     }
+     .menu-icon:hover button{
+        background-color: #696cbe;
+        margin-right:2px;
+        margin-top: 75px;
+        margin-right:40px;
+     }
+     .menu-icon a:hover{
+        background-color: rgb(4, 4, 4);
+     }
 }
 
+@media only screen and (max-width:768px) {
+    .find{
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 300px; 
+    }
+}
+@media only screen and (max-width:377px) {
+    .find{
+        font-size: 7px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 300px; 
+    }
+}
+@media only screen and (max-width:377px) {
+    .searchbox button{
+        font-size: 7px;
+        width: 10%;
+        margin: 0 auto;
+        max-width: 300px; 
+    }
+}
+@media only screen and (max-width:210px) {
+    .find{
+        font-size: 2px;
+        width: 10%;
+        margin: 0 auto;
+        max-width: 300px; 
+    }
+}
+@media only screen and (max-width:210px) {
+    .searchbox button{
+        font-size: 2px;
+        width: 10%;
+        margin: 0 auto;
+        max-width: 300px; 
+    }
+}
