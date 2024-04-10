@@ -1,0 +1,95 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ header{
+    height: 55px;
+    width: 100%;
+    background:rgb(14, 12, 12);
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.logotext{
+    margin-left: 110px;
+}
+.navlist a{
+    text-decoration: none;
+    color: rgb(169, 165, 165);
+    padding: 5px 50px;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.pic{
+    position:absolute;
+    height: auto;
+    left: 0px;
+    width: 100px;
+}
+.container h1{
+    text-align: center;
+    font-size: 65px;
+    background-color: rgb(42, 173, 173);
+    margin-top: 0px;
+}
+.container h3{
+    margin-top:0.2%;
+    text-align: center;
+    background-color: rgb(47, 150, 115);
+}
+.detail{
+    background-color: #645f5f;
+    color: rgb(3, 6, 6);
+    width: 100%;
+}
+.container {
+    max-width: 800px;
+    margin: 8px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.1);
+    background-color: rgb(178, 214, 214);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+.navlist a:hover{
+    background-color: #5a595a54;
+}
+footer{
+    background: #191818;
+    color: #747073;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+}
+@media only screen and (max-width:768px) {
+    .logotext{
+        font-size: 18px ;
+        margin-left: 85px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .pic{
+        position: absolute;
+        width: 80px;
+    }
+}

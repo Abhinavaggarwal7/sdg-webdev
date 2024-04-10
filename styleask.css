@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.logotext{
+    margin-left: 110px;
+}
+.container1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.pic{
+    position:absolute;
+    height: auto;
+    left: 0px;
+    width: 100px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: rgb(169, 165, 165);
+    padding: 5px 50px;
+}
+.navlist a:hover{
+    background-color: #5a595a54;
+}
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(14, 12, 12);
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 15px;
+    color: rgb(142, 172, 197);
+    font-family: 'Sofia', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.container {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 10px 0px 10px rgba(4, 11, 5, 0.1);
+    background-color: rgb(10, 10, 10);
+    border-radius: 20px;
+}
+.questions{
+    color: rgb(203, 99, 126);
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    background-color: rgb(40, 80, 119);
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: 60px;
+    color: #45d8df;
+    font-family: 'Sofia', 'Arial Narrow', Arial, sans-serif;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    background-color:#45d8df;
+    color: #0e0e0e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #246ab5;
+}
+
+footer{
+    background: #191818;
+    color: #747073;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0%;
+}
+@media only screen and (max-width:768px) {
+    .logotext{
+        font-size: 18px ;
+        margin-left: 85px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .pic{
+        position: absolute;
+        width: 80px;
+    }
+    .questions{
+        font-size: 30px;
+    }
+    h2{
+        font-size:50px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .logotext{
+        font-size: 14px ;
+        margin-left: 85px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .pic{
+        position: absolute;
+        width: 80px;
+    }
+    .questions{
+        font-size: 20px;
+    }
+    h2{
+        font-size:35px;
+    }
+}

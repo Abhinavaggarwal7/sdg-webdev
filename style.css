@@ -1,291 +1,320 @@
-
 *{
-   margin:0;
-   padding:0;
-   box-sizing: border-box;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #A9C9FF;
-    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-}
-header{
-    height: 60px;
-    width: 100%;
-    background:rgb(14, 12, 12);
-    color:white;
-    display: flex;
-    align-items: center;
-}
-.container{
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between
-}
-.navlist{
-    display: none;
-}
-.navlist a{
-    text-decoration: none;
-    color: rgb(169, 165, 165);
-    padding: 5px 3px;
-}
-.navlist a:hover{
-    background-color: #5a595a54;
-}
-.logotext{
-    margin-left: 70px;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-}
-nav ul li{
-    list-style: none;
-    display: inline;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.pic{
-    position:absolute;
-    height: auto;
-    left: 0px;
-    width: 100px;
-}
-.content{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ body{
+     width: 100%;
+     min-height: 100vh;
+     background-color: #A9C9FF;
+     background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+ }
+ header{
+     height: 60px;
+     width: 100%;
+     background:rgb(14, 12, 12);
+     color:white;
+     display: flex;
+     align-items: center;
+ }
+ .container{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between
+ }
+ .navlist{
+     display: none;
+ }
+ .navlist a{
+     text-decoration: none;
+     color: rgb(169, 165, 165);
+     padding: 5px 3px;
+ }
+ .navlist a:hover{
+     background-color: #5a595a54;
+ }
+ .logotext{
+     margin-left: 70px;
+ }
+ nav ul{
+     margin: 0;
+     padding: 0;
+ }
+ nav ul li{
+     list-style: none;
+     display: inline;
+     margin: 0 10px;
+     font-weight: bold;
+ }
+ 
+ .pic{
+     position:absolute;
+     height: auto;
+     left: 0px;
+     width: 100px;
+ }
+ .content {
+    position: relative; 
     width: 100%;
     height: 550px;
-    background: url(image/book.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 60px 0;
 }
+ .blur-background{
+     width: 100%;
+     height: 550px;
+     background-image: url(image/book.jpg);
+     filter: blur(1.5px);
+     -webkit-filter: blur(1.5px);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     z-index: -1;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
 .contentsection{
-    color: rgb(16, 12, 6);
+    color: rgb(16, 16, 16);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1px;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    padding: 50px 0;
 }
-.content h2{
-    font-size: 60px;
-    color: rgb(225, 179, 62);
-    margin-bottom: 10px;
+.contentsection h2{
+     font-size: 60px;
+     color: rgb(1, 1, 1);
+     margin-bottom: 10px;
 }
-.content p{
+.contentsection p{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.find{
-    width: 70%;
-    padding: 10px;
-    outline: none;
-    display: inline;
-    border-radius: 5px 0px 0px 5px;
-    font-size: 1rem;
-    background: rgb(169, 127, 159);
-    border:2px solid rgb(9, 14, 9);
-}
-.searchbox button{
-    padding: 10px 20px;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-    font-size: 1rem;
-    background: rgb(133, 121, 202);
-    cursor:pointer;
-    border:2px solid rgb(9, 9, 9); 
-}
-.buttontext a{
-    text-decoration: none;
-    color: #0f030c;
-}
-.buttontext :hover {
-    font-size: 20px;
-    color: #9f337f;
-}
 
-/*BOOKS SECTION*/
-.books{
-    padding: 50px 0;
-}
-.books h1{
-   text-align: center;
-   margin-bottom: 40px;
-   font-size: 50px;
-   background-color: rgb(110, 8, 42);
-}
-.booksection{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 10px;
-}
-.bookcard{
-    margin: 30px 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    overflow: hidden;
-    box-shadow: 0 4px 8px black
-} 
-.bookcard img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-.bookcard h2{
-    font-size: 22px;
-    padding: 20px;
-}
-.bookcard a{
-    display: block;
+ .find{
+     width: 70%;
+     padding: 10px;
+     outline: none;
+     display: inline;
+     border-radius: 5px 0px 0px 5px;
+     font-size: 1rem;
+     background: rgb(169, 127, 159);
+     border:2px solid rgb(9, 14, 9);
+ }
+ .searchbox button{
+     padding: 10px 20px;
+     outline: none;
+     border-radius: 0px 5px 5px 0px;
+     font-size: 1rem;
+     background: rgb(133, 121, 202);
+     cursor:pointer;
+     border:2px solid rgb(9, 9, 9); 
+ }
+ .buttontext a{
+     text-decoration: none;
+     color: #0f030c;
+ }
+ .find :hover{
+    position: fixed;
+ }
+ .buttontext :hover {
+     font-size: 20px;
+     color: #9f337f;
+ }
+ 
+ /*BOOKS SECTION*/
+ .books{
+     padding: 50px 0;
+ }
+ .books h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    background-color: rgb(110, 8, 42);
+ }
+ .booksection{
+     width: 90%;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     column-gap: 10px;
+ }
+ .bookcard{
+     margin: 30px 10px;
+     border-radius: 10px;
+     border: 1px solid black;
+     overflow: hidden;
+     box-shadow: 0 4px 8px black;
+     position: relative;
+ } 
+ .bookcard img{
+     width: 100%;
+     height: 400px;
+     object-fit: cover;
+ }
+ .bookcard h2{
+     font-size: 22px;
+     padding: 20px;
+ }
+ .bookcard a{
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
     text-align: center;
     text-decoration: none;
     background-color: #0f030c;
     color: #35a053;
     font-size: 18px;
-    padding: 15px 0;
+    padding: 0px 0px;
     cursor: pointer;
-}
-.books h3{
-    text-align: center;
-    background-color: black;
-    color: antiquewhite;
-}
-.bookcard:hover{
-    border-color: hsl(169, 64%, 48%);
-    border-width: 3px;
-}
-.bookcard a:hover{
-    color: hsl(169, 64%, 48%);
+    border-top: 1px solid #000; 
+ }
+ .books h3{
+     text-align: center;
+     background-color: black;
+     color: antiquewhite;
+ }
+ .bookcard:hover{
+     border-color: hsl(169, 64%, 48%);
+     border-width: 3px;
+ }
+ .bookcard a:hover{
+     color: hsl(169, 64%, 48%);
+ 
+ }
+ footer{
+     background: #191818;
+     color: #747073;
+     text-align: center;
+     width: 100%;
+ }
+ .menu-icon{
+     font-size: 24px;
+     padding: 20px;
+     text-align: right;
+     cursor: pointer;
+     display: block;
+ }
 
-}
-footer{
-    background: #191818;
-    color: #747073;
-    text-align: center;
-    width: 100%;
-}
-.menu-icon{
-    font-size: 24px;
-    padding: 20px;
-    text-align: right;
-    cursor: pointer;
-    display: block;
-}
-
-/*media queries*/
-
-@media only screen and (min-width:768px) {
-    .menu-icon{
-        display: none;
-    }
-    .navlist{
-        display: block;
-    }
-}
-
-@media only screen and (max-width:768px) {
-   .content h2{
-    font-size: 28px;
-   }
-   .content P{
-    font-size: 20px;
-   }
-}
-
-@media only screen and (max-width:768px) {
-    .logotext{
-        font-size: 22px ;
-        padding: 8px;
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .pic{
-        position: absolute;
-        width: 80px;
-        
-    }
-}
-@media only screen and (max-width:768px) {
-     .menu-icon button{
-        margin-right:40px;
-        margin-top: 10px;
-        cursor: pointer;
-     }
-     .menu-icon a{
-        font-size: 17px;
-        text-align: center;
-        border-radius: 20px;
-        margin-left: 100px;
-        display: block;
-        color: #e6dee4;
-        background-color: #243729;
-        text-decoration: none;
-        padding: 2px 2px;
-        margin-right: 2px;
-     }
+ /*media queries*/
+ 
+ @media only screen and (min-width:768px) {
      .menu-icon{
-        display: inline-block;
+         display: none;
      }
-     .menu-icon .dropdown{
-        display: none;
+     .navlist{
+         display: block;
      }
-     .menu-icon:hover .dropdown{
-        display: block;
+ }
+ 
+ @media only screen and (max-width:768px) {
+    .content h2{
+     font-size: 28px;
+     margin-bottom: 5%;
+    }
+    .content P{
+     font-size: 20px;
+    }
+ }
+ 
+ @media only screen and (max-width:768px) {
+     .logotext{
+         font-size: 22px ;
+         padding: 8px;
      }
-     .menu-icon:hover button{
-        background-color: #696cbe;
-        margin-right:2px;
-        margin-top: 75px;
-        margin-right:40px;
+ }
+ 
+ @media only screen and (max-width:768px) {
+     .pic{
+         position: absolute;
+         width: 80px;
+         
      }
-     .menu-icon a:hover{
-        background-color: rgb(4, 4, 4);
+ }
+ @media only screen and (max-width:768px) {
+      .menu-icon button{
+         margin-right:40px;
+         margin-top: 2%;
+         cursor: pointer;
+      }
+      .menu-icon a{
+         font-size: 17px;
+         text-align: center;
+         border-radius: 20px;
+         margin-left: 83.5px;
+         display: block;
+         color: #e6dee4;
+         background-color: #243729;
+         text-decoration: none;
+         padding: 2px 5px;
+         margin-right: 2px;
+      }
+      .menu-icon{
+         display: inline-block;
+      }
+      .menu-icon .dropdown{
+         display: none;
+      }
+      .menu-icon:hover .dropdown{
+         display: block;
+         padding:0 1px;
+      }
+      .menu-icon:hover button{
+         background-color: #696cbe;
+         margin-right:2px;
+         margin-top: 37%;
+         margin-right:40px;
+      }
+      .menu-icon a:hover{
+         background-color: rgb(4, 4, 4);
+      }
+ }
+ 
+ @media only screen and (max-width:768px) {
+     .find{
+         font-size: 15px;
+         width: 80%;
+         margin: 0 auto;
+         max-width: 300px; 
      }
-}
-
-@media only screen and (max-width:768px) {
-    .find{
-        font-size: 15px;
-        width: 80%;
-        margin: 0 auto;
-        max-width: 300px; 
-    }
-}
-@media only screen and (max-width:377px) {
-    .find{
-        font-size: 7px;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 300px; 
-    }
-}
-@media only screen and (max-width:377px) {
-    .searchbox button{
-        font-size: 7px;
-        width: 10%;
-        margin: 0 auto;
-        max-width: 300px; 
-    }
-}
-@media only screen and (max-width:210px) {
-    .find{
-        font-size: 2px;
-        width: 10%;
-        margin: 0 auto;
-        max-width: 300px; 
-    }
-}
-@media only screen and (max-width:210px) {
-    .searchbox button{
-        font-size: 2px;
-        width: 10%;
-        margin: 0 auto;
-        max-width: 300px; 
-    }
-}
+ }
+ @media only screen and (max-width:480px) {
+     .find{
+         font-size: 7px;
+         width: 100%;
+         margin: 0 auto;
+         max-width: 300px; 
+     }
+ }
+ @media only screen and (max-width:480px) {
+     .searchbox button{
+         font-size: 7px;
+         width: 10%;
+         margin: 0 auto;
+         max-width: 300px; 
+     }
+ }
+ @media only screen and (max-width:210px) {
+     .find{
+         font-size: 2px;
+         width: 10%;
+         margin: 0 auto;
+         max-width: 300px; 
+     }
+ }
+ @media only screen and (max-width:210px) {
+     .searchbox button{
+         font-size: 2px;
+         width: 10%;
+         margin: 0 auto;
+         max-width: 300px; 
+     }
+ }
