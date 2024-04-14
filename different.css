@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.logotext {
+    margin-left: 110px;
+    font-style: normal;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bfd1a8;
+    height: 60px;
+}
+
+.pic {
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 100px;
+    height: 60px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    padding: 5px 50px;
+}
+
+.navlist a:hover {
+    background-color: #2a292c54;
+}
+h3{
+    color:rgb(202, 199, 192);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Sofia', sans-serif;
+    padding: 20px 0;
+    background-color: rgb(55, 133, 133);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.logotext {
+    margin-left: 110px;
+    font-style: normal;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #040404;
+    height: 60px;
+}
+
+.pic {
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 100px;
+    height: 60px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: rgb(200, 195, 195);
+    padding: 5px 50px;
+}
+
+.navlist a:hover {
+    background-color: #77767b54;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Sofia', sans-serif;
+    padding: 20px 0;
+    background-color: rgb(55, 133, 133);
+}
+
+#books-list {
+    padding: 0 20px; /* Add some padding */
+}
+
+#books-list > div {
+    border: 2px solid black; /* Add border around each book */
+    padding: 20px; /* Add padding inside each book box */
+    margin-bottom: 20px; /* Add some space between each book */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: rgb(119, 177, 164); /* Set background color for each book box */
+}
+#books-list h2 {
+    text-align: center; /* Center align book title */
+}
+
+#books-list p {
+    text-align: center; /* Center align author */
+}
+
+#books-list img {
+    display: block; /* Ensure image is a block element */
+    margin: 0 auto; /* Center align image */
+}
+
+#books-list a {
+    display: inline-block;
+    padding: 8px 15px; /* Adjust padding as needed */
+    background-color: rgb(240, 169, 26); /* Set background color to yellow */
+    color: black; /* Set text color to black */
+    text-decoration: none;
+    border-radius: 10px; /* Add rounded corners */
+    margin-top: 10px; /* Add some space between each link */
+}
+
+#books-list a:hover {
+    background-color: rgb(204, 115, 37); /* Change background color on hover */
+}
+footer {
+    background: #383737;
+    color: #bfbbbe;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    font-style: normal;
+    padding: 10px 0; /* Add padding top and bottom */
+}
+

@@ -1,115 +1,105 @@
-*{
-    margin:0px;
-    padding:0px;
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-header{
-    height: 70px;
+
+/* Set html and body to full height */
+html, body {
+    height: 100%;
+}
+
+/* Header Styles */
+header {
+    height: 55px;
     width: 100%;
-    background:rgb(14, 12, 12);
-    color:white;
+    background: rgb(14, 12, 12);
+    color: white;
     display: flex;
     align-items: center;
 }
-.logotext{
+
+.logotext {
     margin-left: 110px;
 }
-.navlist a{
+
+.navlist a {
     text-decoration: none;
     color: rgb(169, 165, 165);
     padding: 5px 50px;
 }
-.container1{
+
+.navlist a:hover {
+    background-color: #5a595a54;
+}
+
+.container1 {
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-.pic{
-    position:absolute;
+}
+
+.pic {
+    position: absolute;
     height: auto;
-    left: 0px;
+    left: 0;
     width: 100px;
 }
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #97a5c7;
-}
-h2 {
+
+.container h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #6c9b20;
-    font-size: 30px;
-    background-color: #0c0c0c;
-    border-radius: 20px;
+    font-size: 65px;
+    background-color: rgb(42, 173, 173);
+    margin-top: 0;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-
-textarea {
+#contact-info {
+    position: relative;
+    padding: 0px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    background-color: #f8f8f8;
+    background-image: url(image/contact.jpeg);
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #938eb0;
-    font-size: 16px;
-}
-button {
-    background-color: #0c0c0c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    height: calc(100% - 55px); /* Adjusted to fit the remaining viewport height after header */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-button:hover {
-    background-color: #353637;
+#contact-info h2{
+    font-size: 70px;
+    color: rgb(170, 195, 46);
+    margin-bottom: 28px;
+}
+.phone,
+.mail {
+    font-size: 40px;
+    color: rgb(189, 144, 20);
+    margin-bottom: 10px;
 }
 
-.navlist a:hover{
-    background-color: #5a595a54;
-}
-footer{
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px; /* Height of the footer */
     background: #191818;
-    color: #747073;
+    color: #f3ebf1;
     text-align: center;
-    width: 100%;
-    margin-bottom: 0%;
 }
-@media only screen and (max-width:768px) {
-    .logotext{
-        font-size: 18px ;
-        margin-left: 85px;
-    }
-}
-@media only screen and (max-width:768px) {
-    .pic{
-        position: absolute;
-        width: 80px;
-    }
+
+footer p {
+    margin: 0;
+    line-height: 35px;
 }

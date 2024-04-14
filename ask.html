@@ -12,59 +12,46 @@
 <body> 
     <header> 
         <div class="container1">
-        <img src="image/logo.png" class="pic">
-        <h1 class="logotext">BOOK HEAVEN</h1>
+            <img src="image/logo.png" class="pic">
+            <h1 class="logotext">BOOK HEAVEN</h1>
             <nav>
-               <ul class="navlist">
-                     <a href="http://127.0.0.1:5500/webdev/index.html?">HOME</a>
-               </ul>
+                <ul class="navlist">
+                    <a href="http://127.0.0.1:5500/webdev/index.html?">HOME</a>
+                </ul>
             </nav>
-       </div>
+        </div>
     </header>
-</body>
+
     <div class="container">
-             <h2>Book Suggestion</h2>
-             <br><br>
-         <form id="bookForm">
+        <h2>Book Suggestion</h2>
+        <br><br>
+        <form id="bookForm" action="#">
             <div class="form-group">
-                <label class="questions">What genre do you prefer?</label><br>
-                <input type="radio" name="genre" value="fiction"> Fiction<br>
-                <input type="radio" name="genre" value="non-fiction"> Non-Fiction<br><br>
+                <label for="genre">Select Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="fantasy">Fantasy</option>
+                    <option value="Literary Fiction">Literary Fiction</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Historical Fiction">Historical Fiction</option>
+                    <option value="Victorian">Victorian</option>
+                    <option value="19th century">19th century</option>
+                </select>
             </div>
             <div class="form-group">
-                <label class="questions">How long should the book be?</label><br>
-                <input type="radio" name="length" value="short"> Short<br>
-                <input type="radio" name="length" value="medium"> Medium<br>
-                <input type="radio" name="length" value="long"> Long<br><br>
-            </div>
-            <div class="form-group">
-                <label class="questions">Do you prefer classic or contemporary?</label><br>
-                <input type="radio" name="era" value="classic"> Classic<br>
-                <input type="radio" name="era" value="contemporary"> Contemporary<br><br>
-            </div>
-            <div class="form-group">
-                <label class="questions">Do you prefer standalone books or series?</label><br>
-                <input type="radio" name="series" value="standalone"> Standalone<br>
-                <input type="radio" name="series" value="series"> Series<br><br>
-            </div>
-            <div class="form-group">
-                <label class="questions">Which setting do you prefer?</label><br>
-                <input type="radio" name="setting" value="urban"> Urban<br>
-                <input type="radio" name="setting" value="rural"> Rural<br>
-                <input type="radio" name="setting" value="fantasy"> Fantasy<br><br>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Find My Book">
+                <input type="submit" value="Find My Book" id="findBook">
             </div>
         </form>
-        <div id="bookSuggestion"></div>
+        <div class="border-after-find-my-book"></div>
+        <div id="bookSuggestion" class="no-books"></div>
     </div>
-    <script src="ask.js"></script>
 
+    <footer>
+        <div>
+            <p>&copy;2024, BOOK HEAVEN</p>
+        </div>
+    </footer>
 
-<footer>
-    <div>
-        <p>&copy;2024, BOOK HEAVEN</p>
-    </div>
-</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+</body>
 </html>
