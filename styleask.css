@@ -78,9 +78,9 @@ select[name='genre'] {
     -moz-appearance: menulist;
     appearance: menulist;
     text-align: center;
-    width: 100%; /* Ensures the select button spans the entire width */
-    margin-bottom: 15px; /* Adds some space below the select button */
-    size: 6; /* Set the size to the number of options */
+    width: 100%; 
+    margin-bottom: 15px; 
+    size: 6; 
     background-color:#621111;
     color: #f5ebeb;
     padding: 10px 20px;

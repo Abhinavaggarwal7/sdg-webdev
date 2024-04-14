@@ -16,7 +16,7 @@ function fetchTopStockMarketBooks() {
 
 function displayBooks(books) {
     const booksList = document.getElementById('books-list');
-    booksList.innerHTML = ''; // Clear previous results
+    booksList.innerHTML = ''; 
 
     books.forEach(book => {
         const title = book.volumeInfo.title;

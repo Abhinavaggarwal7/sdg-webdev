@@ -27,7 +27,7 @@ async function displayBooks(books) {
     if (books.length === 0) {
         bookSuggestion.innerHTML = "<p>No books found for this genre.</p>";
     } else {
-        bookSuggestion.innerHTML = ""; // Clear existing content
+        bookSuggestion.innerHTML = ""; 
 
         for (let book of books) {
             const [bookInfo, ratingInfo] = await Promise.all([fetchBookInfo(book.title), fetchBookRating()]);

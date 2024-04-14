@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Adjust background color as needed */
+    background-color: #f0f0f0; 
 }
 
 .logotext {
@@ -52,7 +52,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Adjust background color as needed */
+    background-color: #f0f0f0; 
 }
 
 .logotext {
@@ -97,41 +97,41 @@ h1 {
 }
 
 #books-list {
-    padding: 0 20px; /* Add some padding */
+    padding: 0 20px; 
 }
 
 #books-list > div {
-    border: 2px solid black; /* Add border around each book */
-    padding: 20px; /* Add padding inside each book box */
-    margin-bottom: 20px; /* Add some space between each book */
-    border-radius: 10px; /* Add rounded corners */
-    background-color: rgb(119, 177, 164); /* Set background color for each book box */
+    border: 2px solid black; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    background-color: rgb(119, 177, 164); 
 }
 #books-list h2 {
-    text-align: center; /* Center align book title */
+    text-align: center; 
 }
 
 #books-list p {
-    text-align: center; /* Center align author */
+    text-align: center; 
 }
 
 #books-list img {
-    display: block; /* Ensure image is a block element */
-    margin: 0 auto; /* Center align image */
+    display: block; 
+    margin: 0 auto; 
 }
 
 #books-list a {
     display: inline-block;
-    padding: 8px 15px; /* Adjust padding as needed */
-    background-color: rgb(240, 169, 26); /* Set background color to yellow */
-    color: black; /* Set text color to black */
+    padding: 8px 15px; 
+    background-color: rgb(240, 169, 26); 
+    color: black; 
     text-decoration: none;
-    border-radius: 10px; /* Add rounded corners */
-    margin-top: 10px; /* Add some space between each link */
+    border-radius: 10px; 
+    margin-top: 10px; 
 }
 
 #books-list a:hover {
-    background-color: rgb(204, 115, 37); /* Change background color on hover */
+    background-color: rgb(204, 115, 37); 
 }
 footer {
     background: #383737;
@@ -140,6 +140,6 @@ footer {
     width: 100%;
     margin-top: auto;
     font-style: normal;
-    padding: 10px 0; /* Add padding top and bottom */
+    padding: 10px 0; 
 }
 

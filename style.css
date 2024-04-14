@@ -252,7 +252,6 @@
         background-color: #131212;
         min-width: 130px;
         z-index: 1;
-        /* Adjust the left position to make sure the menu is fully visible */
         left: 80%;
     }
     .dropdown a {
@@ -290,7 +289,6 @@
         background-color: #131212;
         min-width: 130px;
         z-index: 1;
-        /* Adjust the left position to make sure the menu is fully visible */
         left: 80%;
     }
 
